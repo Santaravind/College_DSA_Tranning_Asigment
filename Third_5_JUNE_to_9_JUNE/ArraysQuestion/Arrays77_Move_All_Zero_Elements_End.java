@@ -2,21 +2,36 @@ package Assigment.Third_5_JUNE_to_9_JUNE.ArraysQuestion;
 
 public class Arrays77_Move_All_Zero_Elements_End {
     public static void main(String[] args) {
-        int arr[]={2,3,4,0,5,0,44,6,0,9,0,5,9};
+        int arr[]={2,3,0,0, 4,0,5,0,44,6,0,9,0,5,9};
 
 
-        for(int i=0; i<arr.length; i++){
-            if (arr[i]==0){
-                int temp=arr[i];
-                int j=i;
-                while (j<arr.length-1){
-                    arr[j]=arr[j+1];
-                    j++;
-                }
-                arr[arr.length-1]=temp;
+//        for(int i=0; i<arr.length; i++){
+//            if (arr[i]==0){
+//                int temp=arr[i];
+//                int j=i;
+//                while (j<arr.length-1){
+//                    arr[j]=arr[j+1];
+//                    j++;
+//                }
+//                arr[arr.length-1]=temp;
+//
+//            }
+//        }
+        int left=0;
+        int right=arr.length-1;
 
+        while (left<right){
+            if (arr[left]==0){
+                int temp=arr[left];
+                arr[left]=arr[right];
+                arr[right]=temp;
+                right--;
+
+            }else {
+                left++;
             }
         }
+
 
         System.out.println("All zero in end  : ");
 

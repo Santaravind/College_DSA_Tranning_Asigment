@@ -5,15 +5,28 @@ public class Arrays78_Move_All_Zero_Elements_Beginning {
         int arr[]={2,3,4,0,5,0,44,6,0,9,0,5,9};
 
 
-        for(int i=0; i<arr.length; i++){
-            if (arr[i]==0){
-                int temp=arr[i];
-                int j=i;
-                while (j>0){
-                    arr[j]=arr[j-1];
-                    j--;
-                }
-                 arr[0]=temp;
+//        for(int i=0; i<arr.length; i++){
+//            if (arr[i]==0){
+//                int temp=arr[i];
+//                int j=i;
+//                while (j>0){
+//                    arr[j]=arr[j-1];
+//                    j--;
+//                }
+//                 arr[0]=temp;
+//            }
+//        }
+        int left=0;
+        int right=arr.length-1;
+
+        while (right>left){
+            if (arr[right]==0){
+                int tem=arr[right];
+                arr[right]=arr[left];
+                arr[left]=tem;
+                left++;
+            }else {
+                right--;
             }
         }
 
