@@ -11,8 +11,7 @@ public class Arrays72_Unique_Elements {
         int unique=0;
 
         List<Integer> ls=new ArrayList<>();
-  int i=0;
-
+        int i=0;
         while(i<arr.length){
             int m=arr[i];
             int j=0;
@@ -27,6 +26,6 @@ public class Arrays72_Unique_Elements {
             i++;
         }
 
-        System.out.println("Unique Elements : \t" + ls);
+        System.out.println("Unique Elements  : \t" + ls);
     }
 }
