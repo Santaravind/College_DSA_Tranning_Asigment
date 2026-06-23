@@ -1,7 +1,5 @@
-package Assigment.Five_Assigment5;
+package Assigment.Five_Assigment5_18_June;
 
-
-import Assigment.Fourth_13_to_15June.Student;
 
 abstract  class Studnet{
   abstract   void calculateGrade();
