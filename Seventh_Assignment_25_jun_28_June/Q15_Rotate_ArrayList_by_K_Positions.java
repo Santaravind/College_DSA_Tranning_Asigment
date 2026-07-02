@@ -11,7 +11,6 @@ public class Q15_Rotate_ArrayList_by_K_Positions {
             arr[end]=temp;
             start++;
             end--;
-
         }
 
     }
