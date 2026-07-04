@@ -7,7 +7,6 @@ public class Singly_Linked_List {
 
     //1. Create and Display a Linked List
     //    2. Insert a Node
-
     //insertion in the list
     //insert First
     void addFirst(int data) {
@@ -230,7 +229,6 @@ public class Singly_Linked_List {
     }
 
 //    6. Find Middle Node
-
     int middleOfList(){
         Node slow=head;
         Node fast=head;
@@ -238,7 +236,7 @@ public class Singly_Linked_List {
             slow=slow.next;
             fast=fast.next.next;
         }
-        return  slow.data;
+        return slow.data;
     }
 
 //7. Detect Loop in Linked List
@@ -320,8 +318,7 @@ public class Singly_Linked_List {
 
 
 //    10. Check Whether Linked List is Palindrome
-
-    boolean ispolindrome(Node list){
+    boolean isPalindrome(Node list){
 
         if (head==null){
             System.out.println("List is not exist :");
@@ -350,96 +347,96 @@ return true;
     public static void main(String[] args) {
 
            Singly_Linked_List list=new Singly_Linked_List();
-           list.addLast(10);
-           list.addLast(20);
-           list.addLast(30);
-           list.addLast(40);
-          System.out.println(list);
-
-          //Add first elements
-           list.addFirst(900);
-           list.display();
-
-           //add at Position of given
-        System.out.println("Add a given position 3 to 100");
-           list.addAtPosition(3,100);
+//           list.addLast(10);
+//           list.addLast(20);
+//           list.addLast(30);
+//           list.addLast(40);
+//          System.out.println(list);
+//
+//          //Add first elements
+//           list.addFirst(900);
 //           list.display();
-          System.out.println(list);
-
-         //delete First elements
-        System.out.println(" Deleted value at first : "+list.deleteFirst());
-        System.out.println(list);
-
-        //delete Last elements
-        System.out.println("Deleted value at last  : "+list.deleteLast());
-        System.out.println(list);
-
-        //delete at given position
-        System.out.println(" Deleted value at given position  : " + list.deleteAtPosition(1));
-        System.out.println(list);
-
-        //delete  at give value
-
-        System.out.println("Deleted value given data : "+list.deleteAtValue(10));
-        System.out.println(list);
-
-
-        list.addLast(40);
-        list.addLast(10);
-        list.addLast(30);
-        list.addLast(60);
-        System.out.println(list);
-
-        //Search Value
-        if (list.IsSearch(10)){
-            System.out.println("\nElement Found");
-        }else {
-            System.out.println("\nElement not  Found ");
-        }
-
-
-        // Middle Node
-        System.out.println("\nMiddle Node : " + list.middleOfList());
-
-
-        //reverse list
-        System.out.println("Reversed list ");
-               list.reverseList();
-
-     //        7. Detect Loop in Linked List
-        System.out.println("\nlist is cycle : "+list.isCycle());
-
-        list.addLast(10);
-        list.addLast(10);
-        list.addLast(20);
-        list.addLast(20);
-        list.addLast(30);
-        list.addLast(30);
-        list.addLast(40);
-        list.addLast(50);
-        list.addLast(50);
-        list.addLast(50);
-        list.removeDuplicate();
-        System.out.println(list);
-
-//        9. Merge Two Sorted Linked Lists
-        Singly_Linked_List list1 =new Singly_Linked_List();
-        list1.addLast(1);
-        list1.addLast(3);
-        list1.addLast(4);
-        list1.addLast(5);
-
-        Singly_Linked_List list2=new Singly_Linked_List();
-        list2.addLast(2);
-        list2.addLast(6);
-        list2.addLast(7);
-        list2.addLast(9);
-
-        System.out.println("\nMerge two list :");
-        System.out.println("list one : " + list1);
-        System.out.println("List two : "+ list2);
-        System.out.println("\nMerged list :");
-        list.mergeTwoSortedList(list1.head,list2.head);
+//
+//           //add at Position of given
+//        System.out.println("Add a given position 3 to 100");
+//           list.addAtPosition(3,100);
+////           list.display();
+//          System.out.println(list);
+//
+//         //delete First elements
+//        System.out.println(" Deleted value at first : "+list.deleteFirst());
+//        System.out.println(list);
+//
+//        //delete Last elements
+//        System.out.println("Deleted value at last  : "+list.deleteLast());
+//        System.out.println(list);
+//
+//        //delete at given position
+//        System.out.println(" Deleted value at given position  : " + list.deleteAtPosition(1));
+//        System.out.println(list);
+//
+//        //delete  at give value
+//
+//        System.out.println("Deleted value given data : "+list.deleteAtValue(10));
+//        System.out.println(list);
+//
+//
+//        list.addLast(40);
+//        list.addLast(10);
+//        list.addLast(30);
+//        list.addLast(60);
+//        System.out.println(list);
+//
+//        //Search Value
+//        if (list.IsSearch(10)){
+//            System.out.println("\nElement Found");
+//        }else {
+//            System.out.println("\nElement not  Found ");
+//        }
+//
+//
+//        // Middle Node
+//        System.out.println("\nMiddle Node : " + list.middleOfList());
+//
+//
+//        //reverse list
+//        System.out.println("Reversed list ");
+//               list.reverseList();
+//
+//     //        7. Detect Loop in Linked List
+//        System.out.println("\nlist is cycle : "+list.isCycle());
+//
+//        list.addLast(10);
+//        list.addLast(10);
+//        list.addLast(20);
+//        list.addLast(20);
+//        list.addLast(30);
+//        list.addLast(30);
+//        list.addLast(40);
+//        list.addLast(50);
+//        list.addLast(50);
+//        list.addLast(50);
+//        list.removeDuplicate();
+//        System.out.println(list);
+//
+////        9. Merge Two Sorted Linked Lists
+//        Singly_Linked_List list1 =new Singly_Linked_List();
+//        list1.addLast(1);
+//        list1.addLast(3);
+//        list1.addLast(4);
+//        list1.addLast(5);
+//
+//        Singly_Linked_List list2=new Singly_Linked_List();
+//        list2.addLast(2);
+//        list2.addLast(6);
+//        list2.addLast(7);
+//        list2.addLast(9);
+//
+//        System.out.println("\nMerge two list :");
+//        System.out.println("list one : " + list1);
+//        System.out.println("List two : "+ list2);
+//        System.out.println("\nMerged list :");
+//        list.mergeTwoSortedList(list1.head,list2.head);
 
 
 //        10. Check Whether Linked List is Palindrome
@@ -448,15 +445,15 @@ return true;
         list3.addLast(1);
         list3.addLast(2);
         list3.addLast(3);
-        list3.addLast(23);
+        list3.addLast(2);
         list3.addLast(1);
-
-        if(list.ispolindrome(list3.head)){
+//        System.out.println("\n list is palindrome or not : " +list3);
+        if(list.isPalindrome(list3.head)){
             System.out.println("\nPalindrome ");
         }else {
             System.out.println("\n Not Palindrome");
         }
 
-                System.out.println("\n list is palindrome or not : " +list3);
+//                System.out.println("\n list is palindrome or not : " +list3);
     }
 }
